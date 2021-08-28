@@ -1,0 +1,29 @@
+@use './variables' as h;
+%nav-a {
+    color: h.$whiteColor;
+    text-decoration: none;
+
+    &:hover {
+        color: #f6908c;
+    }
+}
+
+.display {
+    display: none;
+}
+
+.more-span {
+    color: h.$mainColor;
+    cursor: pointer;
+}
+
+.img-effect {
+    filter: grayscale(80%);
+    width: 100%;
+    transition: all .5s ease-in-out;
+
+    &:hover{
+        filter: grayscale(0);
+        transform: scale(1.2) rotateZ(5deg);
+    }
+}

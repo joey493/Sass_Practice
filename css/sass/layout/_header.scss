@@ -1,0 +1,98 @@
+// import helpers 
+@use "../helpers" as h;
+
+
+.header {
+    padding: 10px 0;
+    border-bottom: 1px solid h.$grayColor;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // logo 
+    .logo {
+        h1{
+            margin:0;
+            
+            font: {
+                family: h.$dacingScriptFont;
+                size:2.5em;
+            } 
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    // hamburger icon for small screens
+    span {
+        font-size: 1.5em;
+        cursor: h.$cursor;
+        position: relative;
+
+        @media #{h.$mediumDevices}{
+            display: none;
+        }
+
+        ul {
+            position: absolute;
+                top: 15px;
+                right: 0;
+            background-color: h.$mainColor;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 150px;
+            z-index: 5;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -25px;
+                right: 2px;
+                border: 15px solid;
+                border-color: transparent transparent h.$mainColor transparent;
+            }
+
+            li {
+                padding: 10px 15px;
+                
+                font: {
+                    size: .55em;
+                    weight: normal;
+                }
+
+                a {
+                    @extend %nav-a;
+                }
+            }
+        }
+    }
+
+    // navbar for large screens
+    .navbar {
+        display: flex;
+        gap: 15px;
+        background-color: h.$mainColor;
+        padding: 20px 15px; 
+        border-radius: 10px;
+        font-weight: bold;
+
+        @media (max-width: #{h.$maxSmallDevices}){
+            display: none;
+        }
+
+        li {
+            flex-basis: 100% / 5;
+            cursor: h.$cursor;
+
+            a {
+                @extend %nav-a;
+            }
+        }
+    }
+}

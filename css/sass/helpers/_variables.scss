@@ -1,0 +1,31 @@
+//  (landscape phones, 576px and up)
+$smallDevices: "(max-width: 767px)";
+$maxSmallDevices: 767px;
+
+// Medium devices (tablets, 768px and up)
+$mediumDevices: "(min-width: 768px)";
+
+// Large devices (desktops, 992px and up)
+$largeDevices: "(min-width: 992px)";
+
+// Extra large devices (large desktops, 1200px and up)
+$ExtraLargeDevices: "(min-width: 1200px)";
+$maxExtraLargeDevices: 1200px;
+
+
+// page Colors
+$mainColor: #e2494c;
+$grayColor: #555;
+$whiteColor: #FFF;
+$footerTextColor: #888;
+
+// section padding & margin
+$sectionsMargin: 20px 0;
+$sectionsPadding: 30px 0;
+
+// header font fmaily & main line-height
+$dacingScriptFont: 'Dancing Script', cursive;
+$textLineHeight: 1.5;
+
+$cursor: pointer;
+

@@ -1,0 +1,26 @@
+@use "../helpers" as h;
+
+* {
+    @include h.prefixer(box-sizing, border-box, moz webkit);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    transition: all .5s ease-in-out;
+    /* Medium devices (tablets, 768px and up) */
+    @media #{h.$mediumDevices} {
+        width: 750px;
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media #{h.$largeDevices} {
+        width: 970px;
+    }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media #{h.$ExtraLargeDevices} {
+        width: 1170px;
+    }
+}

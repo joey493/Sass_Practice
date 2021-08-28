@@ -1,0 +1,35 @@
+@use '../helpers' as h;
+
+.section-header {
+    position: relative;
+
+    h2 {
+        font: {
+            size: 1em;
+            family: h.$dacingScriptFont;
+        }
+
+        background-color: h.$mainColor;
+        color: h.$whiteColor;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        width: -o-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 1.5px;
+            width: 100%;
+            z-index: -1;
+            opacity: .5;
+            background-color: h.$grayColor;
+        }
+    }
+}

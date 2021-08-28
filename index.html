@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="./css/homepage.css">
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+    <title>Sass Practice | Elzero Web School</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Composition</h1>
+                <p>Free PSD Website Template</p>
+            </div>
+
+            <!-- navbar -->
+            <!-- small screens -->
+            <span class="hamburger">
+                <i class="fas fa-bars"></i>
+                <ul class="display">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#ourplayers">Players</a></li>
+                    <li><a href="#lastwork">Latest Work</a></li>
+                    <li><a href="#home">Link Text</a></li>
+                </ul>
+            </span>
+
+            <!-- large screens -->
+            <ul class='navbar'>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ourplayers">Players</a></li>
+                <li><a href="#lastwork">Latest Work</a></li>
+                <li><a href="#home">Link Text</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- End Header -->
+    
+    <!-- Start Slider -->
+    <section class="slider" id="home">
+        <div class="container">
+            <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis culpa libero quaerat nobis perspiciatis labore,"</blockquote>
+            <div class="slider-component">
+                <figure class="slides">
+                    <!-- Cloned Image -->
+                    <img src="images/slider/office5-unsplash.jpg" id="lastClone" alt="sliderImage">
+
+                    <!-- 1st slide -->
+                    <img src="images/slider/office1-unsplash.jpg" alt="sliderImage">
+
+                    <!-- 2nd slide -->
+                    <img src="images/slider/office2-unsplash.jpg" alt="sliderImage">
+
+                    <!-- 3rd slide -->
+                    <img src="images/slider/office3-unsplash.jpg" alt="sliderImage">
+
+                    <!-- 4th slide -->
+                    <img src="images/slider/office4-unsplash.jpg" alt="sliderImage">
+
+                    <!-- 5th slide -->
+                    <img src="images/slider/office5-unsplash.jpg" alt="sliderImage">
+
+                    <!-- Cloned Image -->
+                    <img src="images/slider/office1-unsplash.jpg" id="firstClone" alt="sliderImage">
+
+                </figure>
+                <span class="prev slider-button"><i class="fas fa-arrow-left"></i></span>
+                <span class="next slider-button"><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <ul class="bullets">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Start Slider -->
+    
+    <!-- Start Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <header class="section-header">
+                <h2>
+                    our services
+                </h2>
+            </header>
+            <div class="services-content">
+
+                <!-- first Service -->
+                <div class='service'>
+                    <header>
+                        <i class="fas fa-globe-africa"></i>
+                        <h3>Indonectetus facilies</h3>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus? Assumenda cupiditate at fuga voluptatem unde!
+                    </p>
+                    <span class="more-span">
+                        Read More <i class="fas fa-angle-double-right"></i>
+                    </span>
+                </div>
+
+                <!-- Second Service -->
+                <div class='service'>
+                    <header>
+                        <i class="fas fa-users"></i>
+                        <h3>Indonectetus facilies</h3>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus? Assumenda cupiditate at fuga voluptatem unde!
+                    </p>
+                    <span class="more-span">
+                        Read More <i class="fas fa-angle-double-right"></i>
+                    </span>
+                </div>
+
+                <!-- Third Service -->
+                <div class='service'>
+                    <header>
+                        <i class="fas fa-cogs"></i>
+                        <h3>Indonectetus facilies</h3>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus? Assumenda cupiditate at fuga voluptatem unde!
+                    </p>
+                    <span class="more-span">
+                        Read More <i class="fas fa-angle-double-right"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+    
+    <!-- Start OurPlayers -->
+    <section class="our-players" id="ourplayers">
+        <div class="container">
+            <header class="section-header">
+                <h2>
+                    our players
+                </h2>
+            </header>
+            <div class="players">
+                
+                <!-- player 1 -->
+                <div class="player">
+                    <div class="image">
+                        <img src="./images/players/player1.jpg" alt="player" class="img-effect">
+                    </div>
+                    <div class="content">
+                        <p><b>Name:</b> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus?</p>
+                        <span class="more-span">
+                            View Profile <i class="fas fa-angle-double-right"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- player 2 -->
+                <div class="player">
+                    <div class="image">
+                        <img src="./images/players/player2.jpg" alt="player" class="img-effect">
+                    </div>
+                    <div class="content">
+                        <p><b>Name:</b> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus?</p>
+                        <span class="more-span">
+                            View Profile <i class="fas fa-angle-double-right"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- player 3 -->
+                <div class="player">
+                    <div class="image">
+                        <img src="./images/players/player1.jpg" alt="player" class="img-effect">
+                    </div>
+                    <div class="content">
+                        <p><b>Name:</b> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus?</p>
+                        <span class="more-span">
+                            View Profile <i class="fas fa-angle-double-right"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- player 4 -->
+                <div class="player">
+                    <div class="image">
+                        <img src="./images/players/player2.jpg" alt="player" class="img-effect">
+                    </div>
+                    <div class="content">
+                        <p><b>Name:</b> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus?</p>
+                        <span class="more-span">
+                            View Profile <i class="fas fa-angle-double-right"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- player 5 -->
+                <div class="player">
+                    <div class="image">
+                        <img src="./images/players/player1.jpg" alt="player" class="img-effect">
+                    </div>
+                    <div class="content">
+                        <p><b>Name:</b> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui rerum unde impedit possimus?</p>
+                        <span class="more-span">
+                            View Profile <i class="fas fa-angle-double-right"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OurPlayers -->
+
+    <!-- Start LatestWork -->
+    <section class="latest-work" id="lastwork">
+        <div class="container">
+            <header class="section-header">
+                <h2>
+                    Latest Work
+                </h2>
+            </header>
+            <div class="content">
+                <div class="latest">
+                    <img src="./images/latestWork/first.jpg" alt="Latest Work">
+                </div>
+                <div class="latest">
+                    <img src="./images/latestWork/second.jpg" alt="Latest Work">
+                </div>
+                <div class="latest">
+                    <img src="./images/latestWork/first.jpg" alt="Latest Work">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End LatestWork -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="gallery">
+                <h3 class="section-title">Latest From Blog</h3>
+
+                <!-- First img -->
+                <div class="img-box">
+                    <div class="image">
+                    <img src="./images/footerGallery/gallery1.jpg" alt="gallery" class="img-effect">
+                    </div>
+                    <div class="content">
+                        <h4>Lorem Testing Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad repellat, quis voluptatem cumque doloremque officia doloribus</p>
+                    </div>
+                </div>
+            
+
+                <!-- Second img -->
+                <div class="img-box">
+                    <div class="image">
+                        <img src="./images/footerGallery/gallery2.jpg" alt="gallery" class="img-effect">
+                    </div>
+                    <div class="content">
+                        <h4>Lorem Testing Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad repellat, quis voluptatem cumque doloremque officia doloribus</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3 class="section-title">Company Details</h3>
+                <ul>
+                    <li>Company Name</li>
+                    <li>Street Name & Number</li>
+                    <li>Town</li>
+                    <li>Postal Code</li>
+                    <li>Tel: 012121212</li>
+                    <li>Fax: 012121212</li>
+                    <li>Email:<span class="more-span">Me@Elzero.Org</span></li>
+                </ul>
+                <h4 class="working">Working Hours</h4>
+                <p>Monday - Friday 08:00 - 17:00</p>
+            </div>
+            <div class="contact">
+                <h3 class="section-title">Contact Us</h3>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <input type="submit" value="Submit" class="main-button">
+                </form>
+            </div>
+            <div class="copyright">
+                <div class="text">
+                    All Copy Reserved &copy; 2021
+                </div>
+                <div class="author">
+                    Designed By Os Template
+                </div>
+            </div>
+        </div>
+    </footer>
+    <span class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </span>
+    <!-- End Footer -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+// media query example
+@mixin minMedium {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// Overlay
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+// Prefixer
+@mixin prefixer($prop, $val, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{ "-" + $prefix + "-" + $prop}: $val;
+    }
+    #{$prop}: $val;
+}
+
+// Animation
+@mixin keyFrame($amimationName) {
+    @-webkit-keyframes #{$amimationName} {
+        @content;
+    }
+    @-moz-keyframes #{$amimationName} {
+        @content;
+    }
+    @keyframes #{$amimationName} {
+        @content;
+    }
+}
